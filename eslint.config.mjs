@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Reference material copied for AI context — não faz parte do build.
+    "_reference/**",
   ]),
 ]);
 

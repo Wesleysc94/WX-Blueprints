@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Lint + Typecheck + Build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    env:
+      # Envs mínimas para build passar sem credenciais reais.
+      # Em prod (Netlify), as envs reais são injetadas pelo painel.
+      NEXT_TELEMETRY_DISABLED: "1"
+      NEXT_PUBLIC_APP_URL: "http://localhost:3000"
+      APP_URL: "http://localhost:3000"
+      NEXT_PUBLIC_USE_MOCK_AUTH: "true"
+      ADMIN_EMAILS: "ci@example.com"
+      NEXT_PUBLIC_ADMIN_EMAILS: "ci@example.com"
+      ASAAS_ENVIRONMENT: "sandbox"
+      ASAAS_API_KEY: "ci-dummy"
+      ASAAS_WEBHOOK_TOKEN: "ci-dummy"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install deps
+        run: npm ci --no-audit --no-fund
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Typecheck
+        run: npx tsc --noEmit
+
+      - name: Build
+        run: npm run build

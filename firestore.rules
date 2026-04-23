@@ -1,0 +1,39 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isSelf(uid) {
+      return isAuthenticated() && request.auth.uid == uid;
+    }
+
+    match /users/{uid} {
+      allow read: if isSelf(uid);
+      allow create, update, delete: if false;
+    }
+
+    match /asaasEvents/{eventId} {
+      allow read, write: if false;
+    }
+
+    match /asaasPayments/{paymentId} {
+      allow read, write: if false;
+    }
+
+    match /foundingSeats/{docId} {
+      allow read: if isAuthenticated();
+      allow write: if false;
+    }
+
+    match /coupons/{couponId} {
+      allow read, write: if false;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
