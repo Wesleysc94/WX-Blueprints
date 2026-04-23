@@ -86,7 +86,7 @@ function CardPreview({ template }: { template: Template }) {
 
 export function TemplateCard({ template }: TemplateCardProps) {
   return (
-    <article className="group flex flex-col rounded-2xl border border-white/[0.07] bg-[#111111] p-4 shadow-[0_20px_60px_rgba(0,0,0,0.3)] transition-colors hover:border-white/[0.12]">
+    <article className="group flex h-full flex-col rounded-2xl border border-white/[0.07] bg-[#111111] p-4 shadow-[0_20px_60px_rgba(0,0,0,0.3)] transition-colors hover:border-white/[0.12]">
       <CardPreview template={template} />
 
       <div className="mt-4 flex-1 px-1">

@@ -154,6 +154,7 @@ export default function BlueprintsPage() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeUp}
+              className="h-full"
             >
               <TemplateCard template={template} />
             </motion.div>
