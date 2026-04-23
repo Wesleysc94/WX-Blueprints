@@ -13,7 +13,7 @@ export default function TermosRoute() {
       <Section title="1. Aceitação">
         <p>
           Ao criar uma conta ou assinar um plano na WX Blueprints (
-          <a href="https://wxblueprints.com" className="text-[#00d4ff]">wxblueprints.com</a>),
+          <a href="https://blueprints.wxdigitalstudio.com.br" className="text-[#00d4ff]">blueprints.wxdigitalstudio.com.br</a>),
           você declara estar de acordo com estes Termos de Uso e com nossa Política de Privacidade.
           Se você não concorda com qualquer cláusula, não utilize o serviço.
         </p>

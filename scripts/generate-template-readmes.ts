@@ -22,8 +22,8 @@ const stackCommand = (stack: string[]): string => {
 
 const tierLine = (tier: string): string =>
   tier === "premium"
-    ? "🏆 **Premium** — só assinantes Premium e Founding do [WX Blueprints](https://wxblueprints.com) têm acesso."
-    : "✨ **Free** — disponível para todos os membros do [WX Blueprints](https://wxblueprints.com).";
+    ? "🏆 **Premium** — só assinantes Premium e Founding do [WX Blueprints](https://blueprints.wxdigitalstudio.com.br) têm acesso."
+    : "✨ **Free** — disponível para todos os membros do [WX Blueprints](https://blueprints.wxdigitalstudio.com.br).";
 
 const renderReadme = (t: Template): string => {
   const repoUrl = t.repo_url ?? "https://github.com/Wesleysc94/REPO-NAME";
@@ -77,7 +77,7 @@ Abra [http://localhost:3000](http://localhost:3000) (ou a porta que o dev server
 
 O blueprint técnico completo (com prompt universal, design tokens, spec de animações e checklist de QA) está disponível em:
 
-👉 **https://wxblueprints.com/blueprints/${t.slug}**
+👉 **https://blueprints.wxdigitalstudio.com.br/blueprints/${t.slug}**
 
 Resumo rápido do que alterar:
 
@@ -95,7 +95,7 @@ ${
 
 ## 🤖 Usando com IA coding
 
-Copie o prompt universal completo em [WX Blueprints — ${t.name}](https://wxblueprints.com/blueprints/${t.slug}) e cole em:
+Copie o prompt universal completo em [WX Blueprints — ${t.name}](https://blueprints.wxdigitalstudio.com.br/blueprints/${t.slug}) e cole em:
 
 - **Lovable** — cria a estrutura em minutos com design fiel
 - **Bolt.new** — ideal para MVP rápido
@@ -103,18 +103,18 @@ Copie o prompt universal completo em [WX Blueprints — ${t.name}](https://wxblu
 
 ## 📜 Licença
 
-Uso **individual e comercial** permitido para o assinante (1 projeto por cliente). **Proibido redistribuir**, revender ou publicar o código em repositórios públicos. Detalhes em https://wxblueprints.com/licenca.
+Uso **individual e comercial** permitido para o assinante (1 projeto por cliente). **Proibido redistribuir**, revender ou publicar o código em repositórios públicos. Detalhes em https://blueprints.wxdigitalstudio.com.br/licenca.
 
 ## 🔗 Links
 
-- **Blueprint técnico completo:** https://wxblueprints.com/blueprints/${t.slug}
+- **Blueprint técnico completo:** https://blueprints.wxdigitalstudio.com.br/blueprints/${t.slug}
 - **Demo ao vivo:** ${t.deploy_url}
-- **WX Blueprints (marketplace):** https://wxblueprints.com
+- **WX Blueprints (marketplace):** https://blueprints.wxdigitalstudio.com.br
 - **Suporte:** wxdigitalstudio@gmail.com
 
 ---
 
-Criado por [WX Digital Studio](https://wxblueprints.com) · Qualidade ${"★".repeat(t.quality_score)}${"☆".repeat(5 - t.quality_score)}
+Criado por [WX Digital Studio](https://blueprints.wxdigitalstudio.com.br) · Qualidade ${"★".repeat(t.quality_score)}${"☆".repeat(5 - t.quality_score)}
 `;
 };
 

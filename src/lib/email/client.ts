@@ -10,7 +10,7 @@ const getResend = (): Resend | null => {
 };
 
 export const getFromAddress = (): string =>
-  process.env.EMAIL_FROM_ADDRESS || "WX Blueprints <contato@wxblueprints.com>";
+  process.env.EMAIL_FROM_ADDRESS || "WX Blueprints <contato@wxdigitalstudio.com.br>";
 
 export const getReplyToAddress = (): string | undefined =>
   process.env.EMAIL_REPLY_TO || undefined;

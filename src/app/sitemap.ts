@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { templates } from "@/data/templates";
 
-const BASE = process.env.NEXT_PUBLIC_APP_URL || "https://wxblueprints.com";
+const BASE = process.env.NEXT_PUBLIC_APP_URL || "https://blueprints.wxdigitalstudio.com.br";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

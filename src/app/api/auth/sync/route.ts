@@ -37,7 +37,7 @@ export async function POST(request: Request) {
     });
 
     if (!existed) {
-      const appUrl = getBaseAppUrl(request) || "https://wxblueprints.com";
+      const appUrl = getBaseAppUrl(request) || "https://blueprints.wxdigitalstudio.com.br";
       const displayName = user.name || email.split("@")[0] || "Membro";
       await sendTransactionalEmail({
         to: email,

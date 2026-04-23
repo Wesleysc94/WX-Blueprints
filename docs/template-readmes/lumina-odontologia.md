@@ -2,7 +2,7 @@
 
 Clínica premium com foco em confiança e clareza.
 
-🏆 **Premium** — só assinantes Premium e Founding do [WX Blueprints](https://wxblueprints.com) têm acesso.
+🏆 **Premium** — só assinantes Premium e Founding do [WX Blueprints](https://blueprints.wxdigitalstudio.com.br) têm acesso.
 
 ---
 
@@ -54,7 +54,7 @@ Abra [http://localhost:3000](http://localhost:3000) (ou a porta que o dev server
 
 O blueprint técnico completo (com prompt universal, design tokens, spec de animações e checklist de QA) está disponível em:
 
-👉 **https://wxblueprints.com/blueprints/lumina-odontologia**
+👉 **https://blueprints.wxdigitalstudio.com.br/blueprints/lumina-odontologia**
 
 Resumo rápido do que alterar:
 
@@ -68,7 +68,7 @@ Resumo rápido do que alterar:
 
 ## 🤖 Usando com IA coding
 
-Copie o prompt universal completo em [WX Blueprints — Lumina Odontologia](https://wxblueprints.com/blueprints/lumina-odontologia) e cole em:
+Copie o prompt universal completo em [WX Blueprints — Lumina Odontologia](https://blueprints.wxdigitalstudio.com.br/blueprints/lumina-odontologia) e cole em:
 
 - **Lovable** — cria a estrutura em minutos com design fiel
 - **Bolt.new** — ideal para MVP rápido
@@ -76,15 +76,15 @@ Copie o prompt universal completo em [WX Blueprints — Lumina Odontologia](http
 
 ## 📜 Licença
 
-Uso **individual e comercial** permitido para o assinante (1 projeto por cliente). **Proibido redistribuir**, revender ou publicar o código em repositórios públicos. Detalhes em https://wxblueprints.com/licenca.
+Uso **individual e comercial** permitido para o assinante (1 projeto por cliente). **Proibido redistribuir**, revender ou publicar o código em repositórios públicos. Detalhes em https://blueprints.wxdigitalstudio.com.br/licenca.
 
 ## 🔗 Links
 
-- **Blueprint técnico completo:** https://wxblueprints.com/blueprints/lumina-odontologia
+- **Blueprint técnico completo:** https://blueprints.wxdigitalstudio.com.br/blueprints/lumina-odontologia
 - **Demo ao vivo:** https://lumina-odontologia.vercel.app/
-- **WX Blueprints (marketplace):** https://wxblueprints.com
+- **WX Blueprints (marketplace):** https://blueprints.wxdigitalstudio.com.br
 - **Suporte:** wxdigitalstudio@gmail.com
 
 ---
 
-Criado por [WX Digital Studio](https://wxblueprints.com) · Qualidade ★★★★☆
+Criado por [WX Digital Studio](https://blueprints.wxdigitalstudio.com.br) · Qualidade ★★★★☆

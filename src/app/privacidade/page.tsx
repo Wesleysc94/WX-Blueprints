@@ -17,7 +17,7 @@ export default function PrivacidadeRoute() {
       <Section title="1. Controlador">
         <p>
           A WX Digital Studio é a controladora dos dados pessoais tratados na plataforma
-          wxblueprints.com, nos termos da Lei Geral de Proteção de Dados (Lei nº 13.709/2018 —
+          blueprints.wxdigitalstudio.com.br, nos termos da Lei Geral de Proteção de Dados (Lei nº 13.709/2018 —
           LGPD). Contato do encarregado:{" "}
           <a href="mailto:wxdigitalstudio@gmail.com" className="text-[#00d4ff]">
             wxdigitalstudio@gmail.com

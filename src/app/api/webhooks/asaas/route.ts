@@ -652,7 +652,7 @@ export const POST = async (request: Request): Promise<Response> => {
 
     let result: unknown = { ignored: true };
     const name = event.event as AsaasWebhookEvent;
-    const appUrl = getBaseAppUrl(request) || "https://wxblueprints.com";
+    const appUrl = getBaseAppUrl(request) || "https://blueprints.wxdigitalstudio.com.br";
 
     if (CHECKOUT_EVENTS.has(name)) {
       result = await handleCheckoutEvent(db, event);
