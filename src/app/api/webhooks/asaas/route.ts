@@ -628,6 +628,14 @@ const markEventProcessed = async (
   });
 };
 
+// Asaas valida a URL do webhook fazendo GET/HEAD na hora do cadastro.
+// Retornamos 200 OK aqui pra passar a validação. POST continua sendo o handler real.
+export const GET = async (): Promise<Response> =>
+  Response.json({ ok: true, endpoint: "asaas-webhook", method: "POST" });
+
+export const HEAD = async (): Promise<Response> =>
+  new Response(null, { status: 200 });
+
 export const POST = async (request: Request): Promise<Response> => {
   try {
     ensureWebhookToken(request);

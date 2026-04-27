@@ -14,6 +14,8 @@ const eslintConfig = defineConfig([
     "next-env.d.ts",
     // Reference material copied for AI context — não faz parte do build.
     "_reference/**",
+    // Build artifacts da Netlify CLI (npx netlify dev/build) — gerado, ignorar.
+    ".netlify/**",
   ]),
 ]);
 
